@@ -3,14 +3,31 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { LoginComponent } from './login/login.component';
+import { PerpustakaanComponent } from './perpustakaan/perpustakaan.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialDesign } from './material/material';
+import { FormsModule } from '@angular/forms';
+import { TambahDataComponent } from './tambah-data/tambah-data.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    PerpustakaanComponent,
+    TambahDataComponent
+  ],
+  entryComponents: [
+    TambahDataComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MaterialDesign,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
